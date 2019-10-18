@@ -20,12 +20,12 @@ export const DynamicStyleRulesDemo = (props: IProps) => {
       height: params.imgSize
     }
   });
-  const styles = parseStyle(rawStyles, props, NormalTheme);
+  const styles = parseStyle(rawStyles, props, DarkTheme);
 
   return (
     <View>
       <Text style={styles.text}> 动态样式 </Text>
-      <Image style={styles.image} source={require("../../../res/images/category_app.png")}/>
+      <Image style={styles.image} source={require("../res/images/category_app.png")}/>
     </View>
   );
 };
